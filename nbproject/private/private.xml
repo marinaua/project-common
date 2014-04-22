@@ -4,9 +4,7 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Marik/Documents/NetBeansProjects/commoncreditservice/src/com/marina/entity/user/AbstractUser.java</file>
-            <file>file:/C:/Users/Marik/Documents/NetBeansProjects/commoncreditservice/src/com/marina/entity/creditprogram/CreditProgram.java</file>
-            <file>file:/C:/Users/Marik/Documents/NetBeansProjects/commoncreditservice/src/com/marina/entity/user/Client.java</file>
-            <file>file:/C:/Users/Marik/Documents/NetBeansProjects/commoncreditservice/src/com/marina/entity/Entity.java</file>
+            <file>file:/C:/Users/Marik/Documents/NetBeansProjects/commoncreditservice/src/com/marina/message/ResponseMsg.java</file>
         </group>
     </open-files>
 </project-private>
