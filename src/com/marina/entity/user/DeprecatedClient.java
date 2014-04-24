@@ -9,7 +9,7 @@ package com.marina.entity.user;
  *
  * @author Marik
  */
-public class Client extends AbstractUser {
+public class DeprecatedClient extends DeprecatedAbstractUser {
 
     private static final long serialVersionUID = 1L;
 

@@ -3,14 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-package com.marina.entity.user;
+package com.marina.exception;
 
 /**
  *
  * @author Marik
  */
-public class Manager extends AbstractUser {
-    private static final long serialVersionUID = 1L;
+public class AuthorizeException extends AbstractException {
     
+    public AuthorizeException(){
+        super.message = "Login or password incorrect";
+        super.code = 403;
+    }
+   
 }

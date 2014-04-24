@@ -17,6 +17,7 @@ public class CreditProgram implements Entity {
     private String title;
     private String shortDescription;
     private String fullDescription;
+    private final String table = "credit_program";
 
     @Override
     public int getID() {
@@ -63,6 +64,13 @@ public class CreditProgram implements Entity {
 
     @Override
     public String getTable() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return table;
     }
+
+    @Override
+    public String toString() {
+        return "CreditProgram{" + "id=" + id + ", title=" + title + ", shortDescription=" + shortDescription + ", fullDescription=" + fullDescription + '}';
+    }
+    
+    
 }

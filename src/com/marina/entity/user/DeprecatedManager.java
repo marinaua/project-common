@@ -10,7 +10,7 @@ package com.marina.entity.user;
  *
  * @author Marik
  */
-public class Administrator extends AbstractUser {
+public class DeprecatedManager extends DeprecatedAbstractUser {
     private static final long serialVersionUID = 1L;
     
 }

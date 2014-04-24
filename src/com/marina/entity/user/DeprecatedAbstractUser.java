@@ -11,7 +11,7 @@ import com.marina.entity.Entity;
  *
  * @author Marik
  */
-public abstract class AbstractUser implements User, Entity {
+public abstract class DeprecatedAbstractUser implements IUser, Entity {
 
     protected static final long serialVersionUID = 1L;
     private final String table = "user";

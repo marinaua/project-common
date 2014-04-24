@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package com.marina.entity;
+package com.marina.exception;
 
 import java.io.Serializable;
 
@@ -12,9 +12,7 @@ import java.io.Serializable;
  *
  * @author Marik
  */
-public interface Entity extends Serializable {    
-    public String getColumns();
-    public String getValues();
-    public String getTable();
-    public int getID();
+public interface IException extends Serializable {
+    public String getMessage();
+    public int getCode();
 }

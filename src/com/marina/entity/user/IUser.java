@@ -6,14 +6,12 @@
 
 package com.marina.entity.user;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Marik
  */
-public class Guest extends AbstractUser {
-    private static final long serialVersionUID = 1L;
-
-    public Guest() {
-        this.role = "guest";
-    }
+public interface IUser extends Serializable {
+    
 }
