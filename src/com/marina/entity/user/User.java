@@ -89,7 +89,7 @@ public class User implements IUser, Entity {
     public String getRole() {
         return role;
     }
-    
+
     public void setRole(String role) {
         this.role = role;
     }
@@ -106,7 +106,13 @@ public class User implements IUser, Entity {
 
     @Override
     public String toString() {
-        return "AbstractUser{" + "id=" + id + ", name=" + name + ", surname=" + surname + ", '" + income + "', '" + managerID + "', role=" + role + '}';
+        return "AbstractUser{" + "id=" + id + ", name=" + name + ", surname=" + surname + ", '" + income + "', '" + managerID + "', role=" + role + " pass: " + password + " login: " + login + '}';
+    }
+
+    @Override
+    public String getSQLValues() {
+//        return "id = '', name = '', surname = '', income = '', manager_id = '', login, password = '', role = ''";
+        return "";
     }
 
 }

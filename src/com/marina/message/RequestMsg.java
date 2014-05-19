@@ -6,20 +6,30 @@
 
 package com.marina.message;
 
-import java.io.Serializable;
+import com.marina.entity.user.User;
 
 /**
  *
  * @author Marik
  */
-public class RequestMsg implements Serializable{
+public class RequestMsg implements IMessage{
     private static final long serialVersionUID = -6871384776219135769L;
     private String command; 
     private Object data;
+    private User user;
 
-    public RequestMsg(String command, Object data) {
+    public RequestMsg(User user, String command, Object data) {
+        this.user = user;
         this.command = command;
         this.data = data;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
     
     public String getCommand() {

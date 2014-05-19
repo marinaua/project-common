@@ -6,29 +6,28 @@
 
 package com.marina.message;
 
-import java.io.Serializable;
-
 /**
  *
  * @author Marik
  */
-public class ResponseMsg implements Serializable{
-    private boolean error;
+public class ResponseMsg implements IMessage{
+    private static final long serialVersionUID = 1L;
+    private boolean success;
     private String message;
     private Object data;
 
-    public ResponseMsg(boolean error, String message, Object data) {
-        this.error = error;
+    public ResponseMsg(boolean success, String message, Object data) {
+        this.success = success;
         this.message = message;
         this.data = data;
     }
 
-    public boolean isError() {
-        return error;
+    public boolean isSuccess() {
+        return success;
     }
 
-    public void setError(boolean error) {
-        this.error = error;
+    public void setSuccess(boolean success) {
+        this.success = success;
     }
 
     public String getMessage() {
@@ -49,7 +48,7 @@ public class ResponseMsg implements Serializable{
 
     @Override
     public String toString() {
-        return "ResponseMsg{" + "error=" + error + ", message=" + message + ", data=" + data + '}';
+        return "ResponseMsg{" + "success=" + success + ", message=" + message + ", data=" + data + '}';
     }
     
     

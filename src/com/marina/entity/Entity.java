@@ -17,4 +17,5 @@ public interface Entity extends Serializable {
     public String getValues();
     public String getTable();
     public int getID();
+    public String getSQLValues();
 }

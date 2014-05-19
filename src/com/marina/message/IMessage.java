@@ -4,16 +4,14 @@
  * and open the template in the editor.
  */
 
-package com.marina.entity.user;
+package com.marina.message;
+
+import java.io.Serializable;
 
 /**
  *
  * @author Marik
  */
-public class DeprecatedGuest extends DeprecatedAbstractUser {
-    private static final long serialVersionUID = 1L;
-
-    public DeprecatedGuest() {
-        this.role = "guest";
-    }
+public interface IMessage extends Serializable {
+    
 }

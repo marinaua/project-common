@@ -13,6 +13,7 @@ import com.marina.entity.Entity;
  * @author Marik
  */
 public class CreditProgram implements Entity {
+    private static final long serialVersionUID = 1L;
     private int id;
     private String title;
     private String shortDescription;
@@ -70,6 +71,11 @@ public class CreditProgram implements Entity {
     @Override
     public String toString() {
         return "CreditProgram{" + "id=" + id + ", title=" + title + ", shortDescription=" + shortDescription + ", fullDescription=" + fullDescription + '}';
+    }
+
+    @Override
+    public String getSQLValues() {
+        return "title = '" + title + "', short_description = '" + shortDescription + "', full_description = '" + fullDescription + "'";
     }
     
     

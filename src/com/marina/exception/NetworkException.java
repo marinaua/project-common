@@ -4,13 +4,16 @@
  * and open the template in the editor.
  */
 
-package com.marina.entity.user;
+package com.marina.exception;
 
 /**
  *
  * @author Marik
  */
-public class DeprecatedManager extends DeprecatedAbstractUser {
-    private static final long serialVersionUID = 1L;
+public class NetworkException extends AbstractException {
+    public NetworkException(){
+        super.message = "Network problems.";
+        super.code = 0;
+    }
     
 }
